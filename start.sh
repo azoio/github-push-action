@@ -9,7 +9,7 @@ REPOSITORY=${INPUT_REPOSITORY:-$GITHUB_REPOSITORY}
 
 echo "Push to branch $INPUT_BRANCH";
 
-echo "${INPUT_GITHUB_TOKEN}";
+echo ${INPUT_GITHUB_TOKEN};
 [ -z "${INPUT_GITHUB_TOKEN}" ] && {
     echo 'Missing input "github_token: ${{ secrets.GITHUB_TOKEN }}".';
     exit 1;
